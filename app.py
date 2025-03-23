@@ -1,19 +1,18 @@
-from dotenv import load_dotenv
-import pandas as pd
-from datetime import datetime, timedelta
-import plotly.graph_objects as go
-import yfinance as yf
-from crewai_tools import SerperDevTool
-from crewai import Agent, Task, Crew
-import time
-import os
-import streamlit as st
-
 # Fix for pysqlite3 import error on Streamlit
 import sys
 __import__('pysqlite3')
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
+import streamlit as st
+import os
+import time
+from crewai import Agent, Task, Crew
+from crewai_tools import SerperDevTool
+import yfinance as yf
+import plotly.graph_objects as go
+from datetime import datetime, timedelta
+import pandas as pd
+from dotenv import load_dotenv
 
 load_dotenv()
 
