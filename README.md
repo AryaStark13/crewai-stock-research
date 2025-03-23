@@ -65,12 +65,6 @@ The application supports several advanced configurations:
 3. Click "Analyze Stock"
 4. Explore the generated research, analysis, and news about the company
 
-## Screenshots
-
-[Screenshot 1 description]
-[Screenshot 2 description]
-[Screenshot 3 description]
-
 ## Additional Resources
 
 - [CrewAI GitHub Repository](https://github.com/crewAIInc/crewAI)
