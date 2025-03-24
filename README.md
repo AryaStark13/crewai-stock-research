@@ -13,7 +13,7 @@ This blog presents a Streamlit application that demonstrates the power of CrewAI
 
 ## Live Demo
 
-![Streamlit Demo](https://example.com/demo.gif)
+![Streamlit Demo](https://crewai-stock-research.streamlit.app/)
 
 ## Or, try it out yourself by running the code below.
 
@@ -50,13 +50,6 @@ The app will open in your default web browser. Enter a stock ticker symbol, conf
 ├── blog.md             # Blog post content uploaded to ![Blog link](https://example.com/demo.gif)
 └── README.md           # This file
 ```
-
-## Advanced Configuration
-
-The application supports several advanced configurations:
-
-1. **LLM Selection**: Choose from different LLM models (GPT-4, GPT-3.5, Claude, etc.)
-2. **Verbosity Levels**: Set how much detail you want to see during the analysis process
 
 ## Example Usage
 

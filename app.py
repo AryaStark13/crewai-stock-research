@@ -12,9 +12,10 @@ import yfinance as yf
 import plotly.graph_objects as go
 from datetime import datetime, timedelta
 import pandas as pd
-from dotenv import load_dotenv
 
-load_dotenv()
+# Load environment variables (if using a .env file)
+# from dotenv import load_dotenv
+# load_dotenv()
 
 # Configure page settings
 st.set_page_config(
@@ -31,23 +32,37 @@ with st.sidebar:
     st.image(
         "https://raw.githubusercontent.com/joaomdmoura/crewAI/main/docs/crewai_logo.png", width=150)
 
-    openai_key = os.environ.get("OPENAI_API_KEY")
-    serper_key = os.environ.get("SERPER_API_KEY")
-    if openai_key and serper_key:
-        st.success("Retrieved API Keys from environment variables.")
-    else:
-        # API Key input
-        st.subheader("API Keys")
-        openai_key = st.text_input("OpenAI API Key", type="password")
-        serper_key = st.text_input("Serper API Key", type="password")
+# Useful when running locally - Can set API keys in a .env file
+    # openai_key = os.environ.get("OPENAI_API_KEY")
+    # serper_key = os.environ.get("SERPER_API_KEY")
+    # if openai_key and serper_key:
+    #     st.success("Retrieved API Keys from environment variables.")
+    # else:
+    #     # API Key input
+    #     st.subheader("API Keys")
+    #     openai_key = st.text_input("OpenAI API Key", type="password")
+    #     serper_key = st.text_input("Serper API Key", type="password")
 
-        if st.button("Save Keys"):
-            if openai_key:
-                os.environ["OPENAI_API_KEY"] = openai_key
-                st.success("OpenAI API Key set!")
-            if serper_key:
-                os.environ["SERPER_API_KEY"] = serper_key
-                st.success("Serper API Key set!")
+    #     if st.button("Save Keys"):
+    #         if openai_key:
+    #             os.environ["OPENAI_API_KEY"] = openai_key
+    #             st.success("OpenAI API Key set!")
+    #         if serper_key:
+    #             os.environ["SERPER_API_KEY"] = serper_key
+    #             st.success("Serper API Key set!")
+
+    # API Key input
+    st.subheader("API Keys")
+    openai_key = st.text_input("OpenAI API Key", type="password")
+    serper_key = st.text_input("Serper API Key", type="password")
+
+    if st.button("Save Keys"):
+        if openai_key:
+            os.environ["OPENAI_API_KEY"] = openai_key
+            st.success("OpenAI API Key set!")
+        if serper_key:
+            os.environ["SERPER_API_KEY"] = serper_key
+            st.success("Serper API Key set!")
 
     # Agent information
     st.subheader("About the Agent")
