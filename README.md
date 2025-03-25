@@ -13,7 +13,12 @@ This blog presents a Streamlit application that demonstrates the power of CrewAI
 
 ## Live Demo
 
-![Streamlit Demo](https://crewai-stock-research.streamlit.app/)
+[crewai-stock-research.streamlit.app](https://crewai-stock-research.streamlit.app/)
+
+## Screenshots
+![Application Demo](assets/application-demo-analyze.png)
+
+![TSLA Analysis](assets/TSLA-analysis.png)
 
 ## Or, try it out yourself by running the code below.
 
